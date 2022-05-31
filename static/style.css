@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: center;
+}
+
+.logo {
+    width: 320px;
+    margin: 20px;
+}
+
+.logotwo{
+    height:100px;
+    margin: 5px;
+}
+
+h2{
+    font-family: 'Ubuntu', sans-serif;
+    color:rgba(0, 0, 0, 0.902);
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+.p1{
+    font-style: normal;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+}
+
+form {
+    margin: 0 auto;
+    width: 60%;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    height: 40px;
+    width: 35%;
+    font-style: none;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 5px;
+    /* align-items: center; */
+}
+
+.titles {
+    font-size: 20px;
+    margin: 15px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    
+    
+}
+.titles1 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 28px;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    
+    
+}
+
+.signin {
+    color: #2cad2c;
+    margin-top:20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    margin-top: 9px;
+    margin-bottom: 20px;
+    background-color: #2cad2c;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 20px;
+    color: white;
+    font-family:  'Ubuntu', sans-serif;
+}
+.btn-signup{
+    margin-top: 8px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid #2cad2c;
+    border-radius: 6px;
+    color: #2cad2c;
+    font-size: 20px;
+    padding:7px 28px;
+    font-family:  'Ubuntu', sans-serif;
+}
+.signup {
+    background-color: transparent;
+    border: 2px solid #2cad2c;
+    border-radius: 15px;
+    color: #2cad2c;
+    padding: 5px;
+    width: 40px;
+    
+}
+
+section {
+    width: 60%;
+    margin: 0 auto;
+    /* background-color: yellowgreen; */
+}
+
+.link {
+    width: 35%;
+    height: 40px;
+    margin: 8px auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #878b8f52;
+    overflow: hidden;
+}
+
+.link img {
+    
+    height: 30px;
+    background-color: transparent;
+}
+.linkp{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 3px;
+    
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:361px) {
+    /* For mobile phones: */
+    .logo {
+        width:170px;
+        margin: 45px 0px 15px 0px;
+    }
+    .link {
+        width: 80%;
+        height: 38px;
+        margin: 8px auto;
+        padding: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #878b8f52;
+        overflow: hidden;
+        
+    }
+    .seclinks{
+        width: 100%;
+        height: auto;
+        margin:0px;
+    }
+    .linkp{
+        font-family:  'Ubuntu', sans-serif;
+        padding-top: 3px;
+    }
+    .link img {
+        height: auto;
+        background-color: transparent;
+        padding: 3px;
+    }
+    .border{
+        margin: 18px 0;
+    }
+    form {
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    input {
+        height: 45px;
+        width: 80%;
+        font-style: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 18px;
+        padding: 5px;
+        font-size: 18px;
+        margin-bottom: 5px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: transparent;
+        border-radius: 5px;
+        /* align-items: center; */
+    }
+    .wrapper {
+        width: auto;
+        height: auto;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    .signup {
+        background-color: transparent;
+        border: 2px solid #2cad2c;
+        border-radius: 15px;
+        color: #2cad2c;
+        padding: 5px;
+        box-shadow: none;
+        
+    }
+  }
+  @media (min-width:361px) and (max-width:376px) {
+    /* For mobile phones: */
+    
+    .logo {
+        width:150px;
+        margin: 45px 0px 15px 0px;
+    }
+    .link {
+        width: 70%;
+        height: 35px;
+        margin: 8px auto;
+        padding: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #878b8f52;
+        overflow: hidden;
+        border-radius: 5px;
+        
+    }
+    .seclinks{
+        width: 100%;
+        margin:0px;
+    }
+    .linkp{
+        font-family:  'Ubuntu', sans-serif;
+        padding-top: 3px;
+    }
+    .link img {
+        
+        background-color: transparent;
+        padding: 3px;
+    }
+    .border{
+        margin: 15px 0;
+    }
+    form {
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    input {
+        height: 40px;
+        width: 80%;
+        font-style: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        padding: 5px;
+        font-size: 18px;
+        margin-bottom: 5px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: transparent;
+        border-radius: 5px;
+        /* align-items: center; */
+    }
+    .wrapper {
+        width: auto;
+        height: auto;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    .signup {
+        background-color: transparent;
+        border: 2px solid #2cad2c;
+        border-radius: 15px;
+        color: #2cad2c;
+        padding: 5px;
+        margin-top: 20px;
+        box-shadow: none;
+        
+    }
+  }
+  @media (min-width:376px) and (max-width:394px) {
+    /* For mobile phones: */
+    body{
+        height:840px;
+    }
+    .logo {
+        width:170px;
+        margin: 80px 0px 15px 0px;
+    }
+    .link {
+        width: 80%;
+        height: 40px;
+        margin: 8px auto;
+        padding: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #878b8f52;
+        overflow: hidden;
+        
+    }
+    .seclinks{
+        width: 100%;
+        height: auto;
+        margin:0px;
+    }
+    .linkp{
+        font-family:  'Ubuntu', sans-serif;
+        padding-top: 3px;
+    }
+    .link img {
+        height: auto;
+        background-color: transparent;
+        padding: 3px;
+    }
+    .border{
+        margin: 20px 0;
+    }
+    form {
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    input {
+        height: 45px;
+        width: 80%;
+        font-style: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 5px;
+        font-size: 18px;
+        margin-bottom: 5px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: transparent;
+        border-radius: 5px;
+        /* align-items: center; */
+    }
+    .wrapper {
+        width: auto;
+        height: auto;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    .signup {
+        background-color: transparent;
+        border: 2px solid #2cad2c;
+        border-radius: 15px;
+        color: #2cad2c;
+        padding: 5px;
+        margin-top: 20px;
+        box-shadow: none;
+        
+    }
+    
+  }
+  @media (min-width:394px) and (max-width:413px) {
+    /* For mobile phones: */
+    .logo {
+        width:170px;
+        margin: 100px 0px 15px 0px;
+    }
+    .link {
+        width: 80%;
+        height: 40px;
+        margin: 8px auto;
+        padding: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #878b8f52;
+        overflow: hidden;
+        
+    }
+    .seclinks{
+        width: 100%;
+        height: auto;
+        margin:0px;
+    }
+    .linkp{
+        font-family:  'Ubuntu', sans-serif;
+        padding-top: 3px;
+    }
+    .link img {
+        height: auto;
+        background-color: transparent;
+        padding: 3px;
+    }
+    .border{
+        margin: 20px 0;
+    }
+    form {
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    input {
+        height: 45px;
+        width: 80%;
+        font-style: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 5px;
+        font-size: 18px;
+        margin-bottom: 5px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: transparent;
+        border-radius: 5px;
+        /* align-items: center; */
+    }
+    .wrapper {
+        width: auto;
+        height: auto;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    .signup {
+        background-color: transparent;
+        border: 2px solid #2cad2c;
+        border-radius: 15px;
+        color: #2cad2c;
+        padding: 5px;
+        margin-top: 20px;
+        box-shadow: none;
+        
+    }
+    
+  }
+  @media (min-width:413px) and (max-width:415px) {
+    /* For mobile phones: */
+    .logo {
+        width:170px;
+        margin: 80px 0px 15px 0px;
+    }
+    .link {
+        width: 80%;
+        height: 40px;
+        margin: 8px auto;
+        padding: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #878b8f52;
+        overflow: hidden;
+        
+    }
+    .seclinks{
+        width: 100%;
+        height: auto;
+        margin:0px;
+    }
+    .linkp{
+        font-family:  'Ubuntu', sans-serif;
+        padding-top: 3px;
+    }
+    .link img {
+        height: auto;
+        background-color: transparent;
+        padding: 3px;
+    }
+    .border{
+        margin: 20px 0;
+    }
+    form {
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+        flex-wrap: wrap;
+    }
+    input {
+        height: 45px;
+        width: 80%;
+        font-style: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 5px;
+        font-size: 18px;
+        margin-bottom: 5px;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: transparent;
+        border-radius: 5px;
+        /* align-items: center; */
+    }
+    .wrapper {
+        width: auto;
+        height: auto;
+        background-color: #ffffff;
+        text-align: center;
+    }
+    .signup {
+        background-color: transparent;
+        border: 2px solid #2cad2c;
+        border-radius: 15px;
+        color: #2cad2c;
+        padding: 5px;
+        margin-top: 20px;
+        box-shadow: none;
+        
+    }
+    
+  }

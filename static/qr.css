@@ -1,0 +1,370 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.con{
+    background-color: #d2de2c;
+    box-shadow: 0px 2px 2px 0 rgba(0, 0, 0, 0.10), 0 6px 20px 0 rgba(0, 0, 0, 0.20 );
+    border-radius: 0px 0px 30px 30px; 
+    height: auto;
+    width: 100%;
+    position: absolute;
+    padding-bottom: 30px;
+}
+.fa-arrow-left{
+    font-size: 30px;
+    color: white;
+    padding: 40px;
+}
+
+h2, a, .p1, .p2{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+a{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+h2{
+    text-align: center;
+    color: white;
+    font-weight: 1000;
+    margin-bottom: 0px;
+}
+.p1 , .p2{
+    text-align: center;
+    color: white;
+    font-weight: 300;
+}
+.p1{
+    margin: 3px;
+}
+.p2{
+    background-color: transparent;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 6px;
+    width: 100px;
+    margin: 20px auto;
+}
+.innercont{
+    left:44% ;
+    width:auto;
+    float: left;
+    position: relative;
+    
+    
+}
+.innercont2{
+    right:44% ;
+    float: right;
+    width: auto;
+    position: relative;
+   
+}
+.cp{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0px;
+}
+.innercont img{
+    width: 75px;
+}
+.cont2{
+    position: absolute;
+    top: 56%;
+    left: auto;
+    margin:20px auto;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.cp2
+{
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+.cont2 a{
+    color: #807F7F;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1.4px solid rgba(81, 80, 80, 0.5);
+    border-radius: 6px;
+    padding:8px 25px;   
+}
+.imgd{
+    margin-top: -30px;
+}
+
+@media only screen and (max-width:361px) {
+    /* For mobile phones: */
+    .imgd{
+        display: none;
+    }
+   .con{
+       height:auto;
+       position: absolute;
+       border-radius: 0px 0px 20px 20px;
+       background-color: #4E9721;
+   }
+   .fa-arrow-left{
+    font-size: 25px;
+    color: white;
+    padding:20px 30px 0px 25px;
+    }
+    a{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .p1 , .p2{
+        font-size: 14px;
+    }
+    .p2{
+        padding: 5px;
+    }
+    .innercont{
+        left:25% ;
+        width:auto;
+        float: left;
+        position: relative;
+        
+        
+    }
+    .innercont2{
+        right:25% ;
+        float: right;
+        width: auto;
+        position: relative;
+       
+    }
+    .cont2{
+        top: 47%;
+    }
+    .spn{
+        float: right;
+        margin-top: 15px;
+        margin-right: 230px;
+    }
+
+  }
+  @media (min-width:361px) and (max-width:376px) {
+    /* For mobile phones: */
+    .imgd{
+        display: none;
+    }
+   .con{
+       height:auto;
+       position: absolute;
+       border-radius: 0px 0px 20px 20px;
+       background-color: #4E9721;
+   }
+   .fa-arrow-left{
+    font-size: 25px;
+    color: white;
+    padding:20px 30px 0px 25px;
+    }
+    a{
+        font-size: 20px;
+        font-weight: 200;
+        
+    }
+    .p1 , .p2{
+        font-size: 14px;
+    }
+    .p2{
+        padding: 5px;
+    }
+    .innercont{
+        left:25% ;
+        width:auto;
+        float: left;
+        position: relative;
+        
+        
+    }
+    .innercont2{
+        right:25% ;
+        float: right;
+        width: auto;
+        position: relative;
+       
+    }
+    
+    .spn{
+        float: right;
+        margin-top: 15px;
+        margin-right: 245px;
+    }
+  }
+  @media (min-width:376px) and (max-width:394px) {
+    /* For mobile phones: */
+    .imgd{
+        display: none;
+    }
+   .con{
+       height:auto;
+       position: absolute;
+       border-radius: 0px 0px 20px 20px;
+       background-color: #4E9721;
+   }
+   .fa-arrow-left{
+    font-size: 25px;
+    color: white;
+    padding:20px 30px 0px 25px;
+    }
+    a{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .p1 , .p2{
+        font-size: 14px;
+    }
+    .p2{
+        padding: 5px;
+    }
+    .innercont{
+        left:25% ;
+        width:auto;
+        float: left;
+        position: relative;
+        
+        
+    }
+    .innercont2{
+        right:25% ;
+        float: right;
+        width: auto;
+        position: relative;
+       
+    }
+
+    .cont2{
+        top: 42%;
+    }
+    .spn{
+        float: right;
+        margin-top: 15px;
+        margin-right: 260px;
+    }
+    
+  }
+  @media (min-width:394px) and (max-width:413px) {
+    /* For mobile phones: */
+    .imgd{
+        display: none;
+    }
+   .con{
+       height:auto;
+       position: absolute;
+       border-radius: 0px 0px 20px 20px;
+       background-color: #4E9721;
+   }
+   .fa-arrow-left{
+    font-size: 25px;
+    color: white;
+    padding:20px 30px 0px 25px;
+    }
+    a{
+        font-size: 20px;
+        font-weight: 200;
+    }
+    .p1 , .p2{
+        font-size: 14px;
+    }
+    .p2{
+        padding: 5px;
+    }
+    .innercont{
+        left:25% ;
+        width:auto;
+        float: left;
+        position: relative;
+        
+        
+    }
+    .innercont2{
+        right:25% ;
+        float: right;
+        width: auto;
+        position: relative;
+       
+    }
+    .cont2{
+        top: 40%;
+    }
+    .spn{
+        float: right;
+        margin-top: 14px;
+        margin-right: 280px;
+    }
+    
+  }
+  @media (min-width:413px) and (max-width:415px) {
+    /* For mobile phones: */
+    .imgd{
+        display: none;
+    }
+   .con{
+       height:auto;
+       position: absolute;
+       border-radius: 0px 0px 20px 20px;
+       background-color: #4E9721;
+   }
+   .fa-arrow-left{
+    font-size: 25px;
+    color: white;
+    padding:20px 30px 0px 25px;
+    }
+    a{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .p1 , .p2{
+        font-size: 14px;
+    }
+    .p2{
+        padding: 5px;
+    }
+    .innercont{
+        left:25% ;
+        width:auto;
+        float: left;
+        position: relative;
+        
+        
+    }
+    .innercont2{
+        right:25% ;
+        float: right;
+        width: auto;
+        position: relative;
+       
+    }
+    .cont2{
+        top: 40%;
+    }
+    .spn{
+        float: right;
+        margin-top: 15px;
+        margin-right: 280px;
+    }
+  }
+
+  @media (min-width:500px) and (max-width:2376px){
+      .spn{
+          display: none;
+      }
+  }
+  .btndone{
+      
+      width:20%;
+      margin-right: 50px;
+
+      
+  }
+
+

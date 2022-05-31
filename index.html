@@ -1,0 +1,199 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      <title>Sign in</title>
+<link rel="stylesheet" href="./static/style.css" />
+      <meta name="author" content="mohit yadav" />
+      <style>
+
+          /*
+            Force full width & height.
+            If this block is removed, the layout height/length will be determined by
+            the amount of content in the page. That might result in a page which has
+            a footer only a few inches from the top of the viewport, or one which
+            scrolls beyond the viewport.
+            This forces the layout to always be full screen regardless of how much,
+            or how little, content is in place. Neither is "right" or "wrong", there
+            are valid cases for each. I just want to be clear what's controlling the
+            page/viewport height.
+          */
+          html, body, .viewport {
+            width: 100%;
+            height: 100%; 
+            margin: 0;
+          }
+
+          .flex-container {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        #flex-item {
+           text-align: center;
+            margin: auto;
+        }
+        </style>
+    </head>
+    <body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge"
+		/>
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Signin Form</title>
+		<link rel="stylesheet" href="./static/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="wrapper">
+			<img
+				src="./img/logo-rb.png"
+				alt="logo"
+				class="logo"
+			/>
+			<p class="p1">Sign in to Continue</p>
+
+			<form class="form" action="">
+				<input
+					type="email"
+					placeholder="Email or mobile number"
+				/>
+				<input
+					type="password"
+					placeholder="Password"
+					name=""
+					id=""
+				/>
+				<p class="signin titles">
+					<a href="otp.html" class="signin" style="text-decoration: none;">Sign in with OTP</a>
+				</p>
+				<button class="btn" type="submit"><a href="map.html" style="text-decoration: none; color: white;">Sign in</a></button>
+				<p class="titles1">Don't have an account.</p>
+				<a class="btn-signup" href="signup.html" style="text-decoration: none;">Sign up</a>
+			</form>
+
+			<section class="seclinks">
+				<p class="border">----------- or -----------</p>
+				<div class="link">
+					<img
+						src="./img/google-removebg-preview.png"
+						alt=""
+					/>
+					<p class="linkp">Continue with Google</p>
+				</div>
+				<div class="link">
+					<img
+						src="./img/apple-removebg-preview.png"
+						alt=""
+					/>
+					<p class="linkp">Continue with Apple</p>
+					
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
+
+
+           </object>
+
+     </div>
+
+      <!--Your Splash Screen-->
+      <div id="splash"  class="flex-container" 
+            style ="background: #F8FCFF  ; display: none"  >
+
+         <!--Center align Splash contents in all screen sizes-->
+             <div id="flex-item" >
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+              <img src="./img/logo-rb.png" 
+                   alt="app_icon" 
+                   style="width:250px ; height :140px"
+                   />
+
+               <h2 style ="color: white;"><h2>
+             </div>
+         </div>
+      <!--  Scripts-->
+      <script type="text/javascript">
+
+        function fade(element) {
+        var op = 1;  // initial opacity
+        var timer = setInterval(function () {
+            if (op <= 0.1){
+                clearInterval(timer);
+
+                element.style.display = 'none';
+            }
+            element.style.opacity = op;
+            element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+            op -= op * 0.1;
+        }, 50);
+    }
+
+        setTimeout(function(){ 
+
+                 if(typeof(Storage) !== "undefined") {
+
+                  console.log("Already shown" +sessionStorage.getItem('spalashShown'));
+
+                   if( !sessionStorage.getItem('spalashShown') || sessionStorage.getItem('spalashShown') === null ) {  
+
+                   document.getElementById('splash') .style.display = 'inline';
+
+                    //Display splash
+                    setTimeout(function(){   
+
+                     fade(document.getElementById('splash'));
+                      // document.getElementById('splash') .style.display = 'none'
+                       
+
+                     sessionStorage.setItem('spalashShown', true  );
+                  }
+                   , 3000);
+
+                      } else {
+
+                         //Display Main Content
+                          document.getElementById('splash') .style.display = 'none'
+                            console.log("Already shown");
+                         }
+                      }
+
+                    else {
+                            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                          }
+                             }, 0);
+
+        </script>
+      </body>
+    </html>

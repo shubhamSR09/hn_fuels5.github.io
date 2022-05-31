@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/qr.css" />
+    <link rel="stylesheet" href="./static/qr2.css" />
+    <link rel="stylesheet" href="./static/bookslot.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
+    <script src="js/mobiscroll.javascript.min.js"></script>
+    <script>
+        // Ignore this in your implementation
+        window.isMbscDemo = true;
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-size: 30px;
+            font-weight: 300;
+            padding: 15px 0px 0px 15px;
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 700,
+          'GRAD' 0,
+          'opsz' 48
+        }
+        </style>
+</head>
+<body>
+   
+<div class="con">
+    <div class="stname">
+    <a href="qrpay1.html"><span class="material-symbols-outlined">
+        west
+        </span><span class="spnbs">Book Slot</span></a>
+    <div class="imgd">
+    <img src="./img/logo-rb.png" style="width: 150px;height: 85px;display: block; margin-left: auto;margin-right: auto;">
+    </div>
+    <h2 class=""><img src="./icons/Vector.png"> DVJ ZS Charging Station </h2>
+    <p class="p1">700 S Desplaines St, Chicago, IL 60607, US<p>
+        <p class="p2">Charger 1</p>
+    </div>
+    <div class="innercont">
+        <img src="./icons/J1772 B 1.png">
+    </div>
+    <div class="innercont2"><p class="cp">Level 2 <span>  | </span><span> J1772</span></p>
+        <p class="cp">7.7 kW</p>
+        <p class="cp">$ 0.35/kWh</p>
+    </div>
+
+</div>
+<div class="cont3">
+    <p class="cp2">Select Your Arrival Date and Time</p>
+    <div class="dates">
+        <!--p class="at"><span class="dt1">7</span><span class="dt">8</span><span class="dt">9</span></p-->
+        <form align="center">
+            <input type="datetime-local" name="">
+        </form>
+    </div>
+    
+        <div  class="demo-time-picker">
+            <div>
+                <label>
+                <br>
+                <button type="submit"><a href="booking1.html" style="text-decoration: none; color: white;" >Book Slot</a></button>
+            </label>
+            
+            </div>
+        </div>
+      
+      
+</div>
+<script>
+      
+    mobiscroll.setOptions({
+        locale: mobiscroll.localeEn,  // Specify language like: locale: mobiscroll.localePl or omit setting to use default
+        theme: 'ios',                 // Specify theme like: theme: 'ios' or omit setting to use default
+        themeVariant: 'light'         // More info about themeVariant: https://docs.mobiscroll.com/5-16-2/javascript/datetime#opt-themeVariant
+    });
+    
+    mobiscroll.datepicker('#demo-time', {
+        controls: ['time']
+    });
+    
+    mobiscroll.datepicker('#demo-24h', {
+        controls: ['time'],
+        timeFormat: 'HH:mm'           // More info about timeFormat: https://docs.mobiscroll.com/5-16-2/javascript/datetime#localization-timeFormat
+    });
+    
+    mobiscroll.datepicker('#demo-12h', {
+        controls: ['time'],
+        timeFormat: 'h:mm A'          // More info about timeFormat: https://docs.mobiscroll.com/5-16-2/javascript/datetime#localization-timeFormat
+    });
+    
+    mobiscroll.datepicker('#demo-hms', {
+        controls: ['time'],
+        timeFormat: 'HH:mm:ss',       // More info about timeFormat: https://docs.mobiscroll.com/5-16-2/javascript/datetime#localization-timeFormat
+        headerText: 'Time: {value}'   // More info about headerText: https://docs.mobiscroll.com/5-16-2/javascript/datetime#opt-headerText
+    });
+</script>
+
+</body>
+</html>
